@@ -14,8 +14,8 @@ import org.junit.Test;
 public class TestASumar {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+    public void testUnDigito() {
+        ASumar sum = new ASumar(4);
+    }
 
 }
