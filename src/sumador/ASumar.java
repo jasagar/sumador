@@ -1,9 +1,10 @@
 package sumador;
 
 public class ASumar {
+	private int entero;
 
 	public ASumar(int entero) {
-		// TODO Auto-generated constructor stub
+		this.entero = entero;
 	}
 
 }
