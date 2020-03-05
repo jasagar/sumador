@@ -24,5 +24,14 @@ public class TestASumar {
         String resultado = sum.mostrarUnDigito("4");
         assertEquals("4 = 4", resultado );
     }
+	
+	/**
+	 * 
+	 */
+	@Test
+    public void testVariosDigitos() {
+		ASumar sum2 = new ASumar();
+		String resultado2 = sum2.sumarVariosDigitos("123");
+	}
 
 }

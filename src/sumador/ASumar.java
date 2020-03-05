@@ -17,12 +17,27 @@ public class ASumar {
 	}
 
 	/**
+	 * Constructor sin parámetros
+	 */
+	public ASumar() {
+		
+	}
+
+	/**
 	 * Plantea igualdad entre el parámetro y el atributo total
 	 * @param cadena
 	 * @return la igualdad como String 
 	 */
 	public String mostrarUnDigito(String cadena) {
 		return cadena + " = " + total;
+	}
+
+	/**
+	 * @param cadena2
+	 * @return
+	 */
+	public String sumarVariosDigitos(String cadena2) {
+		return null;
 	}
 
 }
