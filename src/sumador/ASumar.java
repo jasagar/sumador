@@ -7,6 +7,7 @@ package sumador;
  */
 public class ASumar {
 	private String total;
+	private int sumaTotal = 0;
 
 	/**
 	 * Constructor de la clase con un parámetro de entrada
@@ -33,11 +34,15 @@ public class ASumar {
 	}
 
 	/**
+	 * Extrae los valores númericos de un String y devuelve la suma de éstos
 	 * @param cadena2
-	 * @return
+	 * @return suma de los valores numéricos de los caracteres
 	 */
-	public String sumarVariosDigitos(String cadena2) {
-		return null;
+	public int sumarVariosDigitos(String cadena2) {
+		for(int i=0; i<cadena2.length(); i++) {
+			sumaTotal += Character.getNumericValue(cadena2.charAt(i));
+		}
+		return sumaTotal;
 	}
 
 }

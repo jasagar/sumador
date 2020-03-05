@@ -22,16 +22,18 @@ public class TestASumar {
     public void testUnDigito() {
         ASumar sum = new ASumar("4");
         String resultado = sum.mostrarUnDigito("4");
-        assertEquals("4 = 4", resultado );
+        assertEquals("4 = 4", resultado);
     }
 	
 	/**
-	 * 
+	 * Método de prueba para varios dígitos
+	 * Compara el valor de la suma de los dígitos con un valor pre-establecido
 	 */
 	@Test
     public void testVariosDigitos() {
 		ASumar sum2 = new ASumar();
-		String resultado2 = sum2.sumarVariosDigitos("123");
+		int resultado2 = sum2.sumarVariosDigitos("123");
+        assertEquals(6, resultado2);
 	}
 
 }
