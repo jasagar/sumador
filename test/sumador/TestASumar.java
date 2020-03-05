@@ -13,6 +13,9 @@ import org.junit.Test;
  */
 public class TestASumar {
 
+	/**
+	 * 
+	 */
 	@Test
     public void testUnDigito() {
         ASumar sum = new ASumar("4");
