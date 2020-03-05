@@ -1,24 +1,28 @@
 package sumador;
 
 /**
- * @author Jay
- *
+ * @author Jaime Sansano García
+ * @version 1.0
+ * Clase con métodos para la práctica de Diseño Ágil TDD
  */
 public class ASumar {
-	private String entero;
+	private String total;
 
 	/**
-	 * @param entero
+	 * Constructor de la clase con un parámetro de entrada
+	 * @param total da valor al atributo total
 	 */
-	public ASumar(String entero) {
-		this.entero = entero;
+	public ASumar(String total) {
+		this.total = total;
 	}
 
 	/**
-	 * @return
+	 * Plantea igualdad entre el parámetro y el atributo total
+	 * @param cadena
+	 * @return la igualdad como String 
 	 */
-	public String mostrarUnDigito() {
-		return entero + " = 4";
+	public String mostrarUnDigito(String cadena) {
+		return cadena + " = " + total;
 	}
 
 }
