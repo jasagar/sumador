@@ -1,10 +1,14 @@
 package sumador;
 
 public class ASumar {
-	private int entero;
+	private String entero;
 
-	public ASumar(int entero) {
+	public ASumar(String entero) {
 		this.entero = entero;
+	}
+
+	public String mostrarUnDigito() {
+		return entero + " = 4";
 	}
 
 }
