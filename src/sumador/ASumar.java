@@ -53,4 +53,17 @@ public class ASumar {
 		return factor;
 	}
 
+	/**
+	 * Devuelve String vacío si el parámetro tiene valor negativo
+	 * @param cadena3
+	 * @return vacio
+	 */
+	public String valorNegativo(int cadena3) {
+		String result = " ";
+		if(cadena3 < 0) {
+			return result ="";
+		}
+		return result;
+	}
+
 }

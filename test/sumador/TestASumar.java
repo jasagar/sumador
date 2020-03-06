@@ -35,5 +35,16 @@ public class TestASumar {
 		String resultado2 = sum2.sumarVariosDigitos("123");
         assertEquals("1 + 2 + 3 = 6", resultado2);
 	}
+	
+	/**
+	 * Método de prueba para valor negativo
+	 * Compara el resultado del método valorNegativo() con un String vacío
+	 */
+	@Test
+    public void testValorNegativo() {
+        ASumar sum3 = new ASumar();
+        String resultado3 = sum3.valorNegativo(-8);
+        assertEquals("", resultado3);
+	}
 
 }
