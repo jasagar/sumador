@@ -35,11 +35,15 @@ public class ASumar {
 
 	/**
 	 * Devuelve como String el sumatorio y el total de los valores númericos de un String
+	 * o una cadena vacía si el valor del parámetro es negativo
 	 * @param cadena2
-	 * @return factor sumatorio y total de los valores numéricos del String
+	 * @return factor sumatorio y total de los valores numéricos del String o cadena vacía
 	 */
 	public String sumarVariosDigitos(String cadena2) {
 		String factor = "";
+		if(0 > Integer.parseInt(cadena2)) {
+			return factor;
+		}
 		for(int i=0; i<cadena2.length(); i++) {
 			sumaTotal += Character.getNumericValue(cadena2.charAt(i));
 			
