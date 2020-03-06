@@ -34,15 +34,23 @@ public class ASumar {
 	}
 
 	/**
-	 * Extrae los valores númericos de un String y devuelve la suma de éstos
+	 * Devuelve como String el sumatorio y el total de los valores númericos de un String
 	 * @param cadena2
-	 * @return suma de los valores numéricos de los caracteres
+	 * @return factor sumatorio y total de los valores numéricos del String
 	 */
-	public int sumarVariosDigitos(String cadena2) {
+	public String sumarVariosDigitos(String cadena2) {
+		String factor = "";
 		for(int i=0; i<cadena2.length(); i++) {
 			sumaTotal += Character.getNumericValue(cadena2.charAt(i));
+			
+			if(i != cadena2.length()-1) {
+				factor += cadena2.substring(i, i+1) + " " + "+ ";
+			}else {
+				factor += cadena2.substring(i, i+1) + " " + "= ";
+			}
 		}
-		return sumaTotal;
+		factor += sumaTotal;
+		return factor;
 	}
 
 }

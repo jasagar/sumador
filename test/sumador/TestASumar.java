@@ -26,14 +26,14 @@ public class TestASumar {
     }
 	
 	/**
-	 * Método de prueba para varios dígitos
-	 * Compara el valor de la suma de los dígitos con un valor pre-establecido
+	 * Método de prueba para suma con varios dígitos
+	 * Compara sumatorio y suma total de los dígitos con un valor pre-establecido
 	 */
 	@Test
     public void testVariosDigitos() {
 		ASumar sum2 = new ASumar();
-		int resultado2 = sum2.sumarVariosDigitos("123");
-        assertEquals(6, resultado2);
+		String resultado2 = sum2.sumarVariosDigitos("123");
+        assertEquals("1 + 2 + 3 = 6", resultado2);
 	}
 
 }
