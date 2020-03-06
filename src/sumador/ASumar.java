@@ -41,6 +41,8 @@ public class ASumar {
 	 */
 	public static String sumarVariosDigitos(String cadena2) {
 		String factor = "";
+		sumaTotal = 0;
+		
 		if(0 > Integer.parseInt(cadena2)) {
 			return factor;
 		}
@@ -54,6 +56,7 @@ public class ASumar {
 			}
 		}
 		factor += sumaTotal;
+		
 		return factor;
 	}
 
