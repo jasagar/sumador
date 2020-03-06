@@ -7,7 +7,7 @@ package sumador;
  */
 public class ASumar {
 	private String total;
-	private int sumaTotal = 0;
+	private static int sumaTotal = 0;
 
 	/**
 	 * Constructor de la clase con un parámetro de entrada
@@ -39,7 +39,7 @@ public class ASumar {
 	 * @param cadena2
 	 * @return factor sumatorio y total de los valores numéricos del String o cadena vacía
 	 */
-	public String sumarVariosDigitos(String cadena2) {
+	public static String sumarVariosDigitos(String cadena2) {
 		String factor = "";
 		if(0 > Integer.parseInt(cadena2)) {
 			return factor;
